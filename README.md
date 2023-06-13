@@ -1,9 +1,47 @@
-# hw2_a1_breakeven
+# Doing Excel Work with Python: Basic Break-Even Analysis
 
-Information on using this cookiecutter
-
-Development workflows
+Documentation
 =======================
+
+This project is for my Advanced Analytics courses at Oakland University. It uses object-oriented programming to replicate Excel's
+whatif analysis. The notebook uses classes to create a demand model, create data tables of output, find the break-even point, and
+simulate profit.
+
+
+
+Folder Structure
+-----------------
+
+Here's the folder structure that gets created by `cookiecutter-datascience-simple`:
+
+	├── hw2_a1_breakeven	<- The notebooks and scripts live in the main project folder
+		│   .gitignore				<- Common file types for git to ignore
+		│   README.md				<- The top-level README for developers using this project
+		│	setup.py				<- This is the file for installing the whatif package
+		│   hw2_BookstoreModel.ipynb		<- A Jupyter notebook to analyze the demand model
+		│
+		├───data					<- Final and intermediate data
+		│   └───raw					<- The original, immutable data dump
+		│
+		├───docs
+		│       notes.md				<- Simple markdown template for project notes
+		│
+		├───output
+		│		readme.md			<- Guidance for using this folder
+		│		
+		└───src					<- The files for the whatif package		
+			└───whatif
+					__init__.py			<- This lists the modules in the package
+					whatif.py			<- This contains the actual package code from misken
+
+*The data, docs, and output files are not currently used in this project*
+
+
+
+Development Workflows
+=======================
+
+This project uses a cookiecutter described below. Below are the project steps provided by the cookiecutter.
 
 Create new project
 ----------------------
@@ -11,7 +49,7 @@ Create new project
 You've already done this if you are reading this file. You ran:
 
 ```bash
-cookiecutter gh:rkalusniak/cookiecutter-datascience-simple
+cookiecutter gh:misken/cookiecutter-datascience-simple
 ```
 
 Put project under version control
@@ -34,34 +72,6 @@ git push -u origin main
 ```
 
 Great. Using version control is good.
-
-
-Folder structure
------------------
-
-Here's the folder structure that gets created by `cookiecutter-datascience-simple`:
-
-	├── hw2_a1_breakeven	<- Your notebooks and scripts will live in the main project folder
-		│   .gitignore					<- Common file types for git to ignore
-		│   README.md					<- The top-level README for developers (you) using this project
-		│   template-nb.ipynb			<- A Jupyter notebook template
-		│
-		├───data						<- Final and intermediate data
-		│   └───raw						<- The original, immutable data dump
-		│
-		├───docs
-		│       notes.md				<- Simple markdown template for project notes
-		│
-		└───output
-				readme.md				<- Guidance for using this folder
-
-
-Documentation
---------------
-
-In this very simple project structure template, we've just included a markdown file with some typical
-section headings to use for project notes. Expand as desired. Later in the semester we will learn how to
-use Sphinx with restructuredText to write and generate documentation.
 
 
 
